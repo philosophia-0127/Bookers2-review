@@ -1,0 +1,8 @@
+<div class="text-danger">
+  <% if obj.errors.any? %>
+    <%= obj.errors.count %>errors prohibited this obj from being saved:
+    <% obj.errors.full_messages.each do |message| %>
+      <%= message %>
+    <% end %>
+  <% end %>
+</div>
